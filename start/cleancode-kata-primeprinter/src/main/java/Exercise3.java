@@ -18,13 +18,13 @@ public class Exercise3 {
         }
         switch (type) {
             case 2:
-                result -= 0.1 * amount;
+                result = (amount - (0.1 * amount)) - disc * (amount - (0.1 * amount));
                 break;
             case 3:
-                result *= 0.7 * amount;
+                result = (0.7 * amount) - disc * (0.7 * amount);
                 break;
             case 4:
-                result -= 0.5 * amount;
+                result = (amount - (0.5 * amount)) - disc * (amount - (0.5 * amount));
                 break;
         }
         return result;
